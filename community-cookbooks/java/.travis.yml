@@ -1,0 +1,6 @@
+sudo: false
+install: echo "skip bundle install"
+before_script:
+- eval "$(/opt/chef-workstation/bin/chef shell-init bash)"
+script:
+- "./travis-build.sh"

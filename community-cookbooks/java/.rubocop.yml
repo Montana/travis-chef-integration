@@ -1,0 +1,40 @@
+# cookstyle (rubocop) todo:
+
+Lint/UselessAssignment:
+  Exclude:
+    - 'providers/ark.rb'
+
+Naming/AccessorMethodName:
+  Exclude:
+    - 'libraries/matchers.rb'
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+# SupportedStyles: format, sprintf, percent
+Style/FormatString:
+  Exclude:
+    - 'libraries/helpers.rb'
+
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles, AllowInnerSlashes.
+# SupportedStyles: slashes, percent_r, mixed
+Style/RegexpLiteral:
+  Exclude:
+    - 'providers/ark.rb'
+
+Chef/Deprecations/UsesChefRESTHelpers:
+ Enabled: false
+
+Chef/Correctness/PropertyWithoutType:
+  Enabled: false
+
+Chef/Deprecations/ResourceWithoutUnifiedTrue:
+  Enabled: false
+
+Chef/Modernize/WindowsZipfileUsage:
+  Enabled: false
+
+Chef/Style/UsePlatformHelpers:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false

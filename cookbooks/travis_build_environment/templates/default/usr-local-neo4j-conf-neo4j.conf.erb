@@ -1,0 +1,24 @@
+# Managed by Chef on <%= node.name %> :heart:
+dbms.directories.data=data
+dbms.directories.plugins=plugins
+dbms.directories.import=import
+dbms.memory.heap.initial_size=<%= @jvm_heap %>
+dbms.memory.heap.max_size=<%= @jvm_heap %>
+dbms.connector.bolt.enabled=true
+dbms.connector.http.enabled=true
+dbms.connector.https.enabled=true
+dbms.shell.enabled=true
+dbms.jvm.additional=-XX:+UseG1GC
+dbms.jvm.additional=-XX:-OmitStackTraceInFastThrow
+dbms.jvm.additional=-XX:+AlwaysPreTouch
+dbms.jvm.additional=-XX:+UnlockExperimentalVMOptions
+dbms.jvm.additional=-XX:+TrustFinalNonStaticFields
+dbms.jvm.additional=-XX:+DisableExplicitGC
+dbms.jvm.additional=-Djdk.tls.ephemeralDHKeySize=2048
+dbms.windows_service_name=neo4j
+dbms.jvm.additional=-Dunsupported.dbms.udc.source=debian
+dbms.directories.logs=logs
+dbms.directories.run=run
+dbms.directories.lib=lib
+dbms.directories.certificates=certificates
+dbms.security.auth_enabled=false
